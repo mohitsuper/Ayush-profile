@@ -6,6 +6,7 @@
   font-family: 'rubik',sans-serif;
   transition: 0.2s;
   text-transform: capitalize;
+  border-radius: .5rem;
 
   
 }
@@ -152,10 +153,15 @@ flex-wrap: wrap;
 
  .main .cantener h1{
 color:#555;
-font-size: 4.5rem;
+font-size: 5rem;
 }
  .main .cantener h1 span{
    color:#2936C2;
+ }
+ 
+ .main .cantener h4{
+   font-weight: 300;
+   font-size: 3.5rem;
  }
 
 
@@ -183,7 +189,16 @@ font-size: 4.5rem;
   
   width: 100%;
 }
-.about .main .images img{
+.about .main .images{
   width: 100%;
+    overflow: hidden;
+
+}
+.about .main .images img{
+  width:100%;
   
+}
+
+.about .main .images img:hover{
+  transform:scale(1.1) rotate(3deg);
 }
