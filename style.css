@@ -1,25 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+
 
  *{
    margin:0;
   padding:0;
   box-sizing: border-box;
-  font-family: 'rubik',sans-serif;
-  transition: 0.2s;
-  text-transform: capitalize;
-  border-radius: .5rem;
+    font-family: "poppies", sans-serif;
+        text-transform: capitalize;
 
-  
+  transition: 0.3s;
+  border-radius: .5rem;
+  text-decoration: none;
 }
 :root{
-  --green:#00e77e;
+ /* --green:#3DC685;*/
+ --green:#421995;
   --white: #fff;
---light-blue:#777FD6;
   --light-white:#aaa;
   --black:#3d3d3d;
+  --black-body:#3a3536;
   --light-bg:#494950;
+  --creem : #8C7A15;
 }
-section{
-  background: transparent;
+selection{
+  background: var(--white);
   color:var(--black);
 }
 html{
@@ -37,19 +42,50 @@ html{
   background:transparent;
 }
 ::-webkit-slider-thumb{
-  background: var(--green);
+  background: var(--creem);
   border-radius: 5rem;
 }
 
+
+#logo{
+  width:20rem;
+  height: 5rem;
+  cursor: pointer;
+  object-fit: cover;
+  
+  
+}
+.btu{
+  
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 25px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  font-weight: 400;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.btu:hover {
+  color: crimson;
+  background: none;
+}
 body{
-  background: #fff;
+  background: var(--white);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:center;
   color :#000;
+  position: relative;
+  top:0;
+  margin-top: 0;
+  
+  
 }
 section{
   max-width:120rem;
-  margin:0 auto;
-  padding:2rem;
-  padding-right: .9rem;
   
 }
 .header .flex{
@@ -60,26 +96,33 @@ section{
 
 }
 .header{
-position: flex;
 top:0;
 left:0;
+border-top-left-radius:0;
 right: 0;
+padding-right: 2rem;
 z-index: 1000;
+background-color:var(--white);
 position:fixed;
 
 }
-
 .header .flex .navbar{
     font-size: 2.5rem;
+    color:var(--black);
 }
 .header .flex .logo{
-  width:15rem;
-  font-style: 3.5rem;
+  font-weight: 400;
+  font-size: 3rem;
+  color:var(--white);
+}
+
+.header .flex .logo span{
+  color:var(--green);
 }
 
 .header .flex .navbar a{
   margin-left:2rem;
-  color:var(--black);
+  color:var(--light-white);
   font-size: 1.3rem;
   transition: 0.5s color;
   text-decoration: none;
@@ -94,7 +137,7 @@ position:fixed;
 
 
 .header .flex .navbar a:hover{
-  color:var(--light-blue);
+  color:var(--green);
 }
 
 
@@ -103,102 +146,360 @@ position:fixed;
   cursor:pointer;
   font-size: 5rem;
   color:var(--white);
-  padding-top: 8.5rem;
-
 }
 
-
-/*-----------the main page css -------*/
-.main{
-  margin-top: 7.5rem;
-flex-wrap: wrap;
+/*------------home page title css------*/
+/*.home{
+  width:100%;
   height: fit-content;
-  width:100%;
-
-  display: flex;
-  flex-direction: row;
-  position:relative;
-  background: #fff;
-}
-
-.main .page{
-  display: flex;
-  flex:1 1 40rem;
-  width:100%;
-}
-.main .page>img{
-  object-fit: cover;
-  position: absolute;
-  right:0;
-  top:0;
-}
-
-
-
-.main .cantener{
-  display: flex;
-  flex:1 1 40rem;
-  text-align: left;
+  background: var(--black);
+  background-image: url("images/phone-background1.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:center;
+  color :#000;
   position: relative;
-  left:6rem;
-  top:12.5rem;
-  /*height: 20vh;
-  justify-content: center;
-  align-items: center;*/
-  flex-direction: column;
-  font-size: 3rem;
-  color:#555;
+  top:0;
+  margin-top: 0;
+}*/
 
-}
-
- .main .cantener h1{
-color:#555;
-font-size: 5rem;
-}
- .main .cantener h1 span{
-   color:#2936C2;
- }
- 
- .main .cantener h4{
-   font-weight: 300;
-   font-size: 3.5rem;
- }
-
-
-.about{
-  padding-top:30rem;
-  width:100%;
-  height:fit-content;
-}
-
-.about .main{
+/*.home {
   display: flex;
-  flex-direction: row;
+  background: url("img/anand.png") no-repeat center;
+  background-color: #111;
+  height: 100vh;
+  color: #fff;
+  
+  min-height: 50rem;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Ubuntu", sans-serif;
+}
+.home .max-width {
+  width: 100%;
+  display: flex;
+}
+.home-content{
+  top:50rem;
+  position: absolute;
+  left:5%;
+}
+.home .max-width .row {
+  margin-right: 0;
+}
+.home .home-content .text-1 {
+  font-size: 2.7rem;
+}
+.home .home-content .text-2
+{
+  font-size: 7.5rem;
+  color:#2F8C44;
+    color:#deb0b0;
+  font-weight: 600;
+  margin-left: -.3rem;
+}
+
+.home .home-content .text-3 {
+  font-size: 4rem;
+  margin: .2rem 0;
+}
+.home .home-content .text-3 span {
+  font-weight: 500;
+    color:var(--light-white);
+
+}
+.home .home-content a {
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 1.2rem 3.6rem;
+  margin-top: 2rem;
+  font-weight: 400;
+  border-radius: .6rem;
+  border: 2rem solid crimson;
+  transition: all 0.3s ease;
+}
+.home .home-content a:hover {
+  color: crimson;
+  background: none;
+}*/
+
+
+section{
+margin-top: 2.5rem;
+padding: 0 0 0 0;
+  margin-bottom: 2.5rem;
+
+}
+
+.homes{
+  margin-top: 8.5rem;
+  margin-bottom: 5rem;
+  
+}
+.home{
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  background:#fff;
+  width:100%;
+  gap:0;
+}
+
+.home .cantener{
+  display: flex;
+  flex:1 1 40rem;
+  position: relative;
+  top:15rem;
+  width:100%;
+ /* height:28.6rem;*/
+ height: fit-content;
+padding-bottom: 2rem;
+    background:var(--white);
+  padding-left:3rem;
+  flex-direction: column;
+  
+}
+
+.home .images {
+  top:0;
+  right: 0;
+  display: flex;
+  flex: 1 1 40rem;
+  width:100%;
+  
+
+}
+
+.home .images img{
+  width:100%;
+}
+
+.home .cantener span{
+  color:#8C7A15;
+
+  font-size: 2.5rem;
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+
+.home .cantener h4{
+  margin-top:1.5rem;
+  font-size: 3.5rem;
+  font-weight: 200;
+  color:var(--creem);
+}
+
+
+.home .cantener h1{
+    font-size: 5rem;
+    font-weight: 800;
+    color:var(--black-body);
+   
+}
+
+.home .cantener h1 span{
+      font-size: 5rem;
+    font-weight: 800;
+    color:var(--green);
+  margin-bottom: 3.5rem;
+
+}
+
+.home .cantener p{
+  font-size: 2rem;
+  color: #333;
+}
+
+p {
+  font-size: 2rem;
+  color: #aaa;
+}
+
+.home .cantener .main{
+  margin-top:3rem;
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+  font-size:2rem;
+}
+
+.home .cantener .main .row-1,.home .cantener .main .row-2{
+   gap:2rem;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.item{
+  background-color: #F2CE2A;
+  padding: 1rem;
+  padding-right: 2rem;
+  color: var(--light-bg);
+  font-family: cursive;
+}
+
+
+.row-1 .item:nth-child(1){
+  background: linear-gradient(#9955ff,#ea51ff);
+}
+
+.row-1 .item:nth-child(2) {
+  background: #eee;
+    background: linear-gradient(#ff9966,#ff5e62);
+
+}
+
+.row-2 .item:nth-child(1) {
+  background: #2A6DD6;
+    background: linear-gradient(#80ff52,#7ee8f4);
+
+}
+
+.row-2 .item:nth-child(2) {
+  background: #D6B22A;
+    background: linear-gradient(#56ccf2,#2f80ed);
+
+}
+
+/*-----------about page css------------*/
+.about{
+padding-top:2rem;
+z-index: 1;
+}
+.about .row{
+  display :flex;
+  align-items: center;
+  gap:1.5rem;
   flex-wrap: wrap;
 }
-.about .main .images,.about .main .cantener
-{
-  display: flex;
-  width:100%;
-  flex: 1 1 45rem;
+.about .row .img{
+  flex:1 1 40rem;
+  overflow: hidden;
+}
+.about .row .img img{
+  width: 100%;
+  cursor: pointer;
+  
+  
 }
 
-.about .main .cantener {
+.about .row .img img:hover{
+  transform: scale(1.1) rotate(3.5deg) ;
+  filter: brightness(1.2);
+}
+
+.about  .row .cap{
+  flex:1 1 40rem;
+  text-align: center;
+}
+.about  .row  .cap h3{
   font-size: 3rem;
-  height: 30rem;
-  
-  width: 100%;
+  color:var(--black-body);
+  font-weight: 500;
 }
-.about .main .images{
-  width: 100%;
-    overflow: hidden;
+.about  .row  .cap h3 span{
+  color:var(--creem);
+}
+
+.about .row .cap p{
+  padding:1rem 0;
+  line-height: 2;
+  font-size: 1.8rem;
+  color:var(--black-body);
+}
+
+/*------work section------------*/
+.work{
+  margin:2rem 0rem 2rem 0rem;
+}
+
+.work h1{
+  color:#eee;
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+/*--------media quarey ----------------*/
+@media (max-width:990px) {
+  html{
+    font-size: 55%;
+  }
+}
+
+
+@media only screen and (max-width:768px){
+    #menu-btu{
+     display: inline-block;
+    }
+    section {
+      padding: 2rem;
+      margin-bottom: 0rem;
+    }
+  
+.header .flex .navbar a{
+  display:block;
+  margin: 2rem;
+}
+
+.header .flex .navbar.active{
+  clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+}
+/**-----             ----------/--*/
+  
+
+.navbar{
+  display:block;
+  z-index: 1;
+}
+
+.navbar{
+  width: 20rem;
+  height: 100vh;
+  background:var(--light-bg);
+  top:0;
+  right: -30rem;
+  position: fixed;
+  padding-top:5rem;
+  
+}
+
+.navbar ion-icon{
+  position: absolute;
+  top:2rem;
+  left:2.5rem;
+  cursor: pointer;
+  display: block;
+}
+.count .box-canter {
+  margin-bottom: 2rem;
+ margin-top:2rem; 
 
 }
-.about .main .images img{
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+}
+@media (max-width:540px) {
+  html{
+    font-size: 40%;
+  }
+  
+  #menu-btu{
+    display: inline-block;
+  }
+  
+.home{
+  display: flex;
+  flex-direction: columns;
   width:100%;
-  
 }
 
-.about .main .images img:hover{
-  transform:scale(1.1) rotate(3deg);
+.home .cantener{
+  top:0;}
+
+
 }
