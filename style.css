@@ -393,6 +393,8 @@ z-index: 1;
 .about  .row .cap{
   flex:1 1 40rem;
   text-align: center;
+  font-size: 1rem;
+  
 }
 .about  .row  .cap h3{
   font-size: 3rem;
@@ -406,7 +408,7 @@ z-index: 1;
 .about .row .cap p{
   padding:1rem 0;
   line-height: 2;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   color:var(--black-body);
 }
 
