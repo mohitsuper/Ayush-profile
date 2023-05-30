@@ -54,6 +54,7 @@ html{
   width:20rem;
   height: 5rem;
   cursor: pointer;
+  color:var(--black);
   object-fit: cover;
   
   
@@ -103,7 +104,8 @@ top:0;
 left:0;
 border-top-left-radius:0;
 right: 0;
-padding-right: 2rem;
+padding:0rem 2rem 0rem 2rem;
+
 z-index: 1000;
 background-color:var(--white);
 position:fixed;
@@ -116,7 +118,7 @@ position:fixed;
 .header .flex .logo{
   font-weight: 400;
   font-size: 3rem;
-  color:var(--white);
+  color:var(--black);
 }
 
 .header .flex .logo span{
@@ -125,7 +127,7 @@ position:fixed;
 
 .header .flex .navbar a{
   margin-left:2rem;
-  color:var(--light-white);
+  color:var(--black-body);
   font-size: 1.3rem;
   transition: 0.5s color;
   text-decoration: none;
@@ -135,7 +137,9 @@ position:fixed;
   
 }
 .header .flex .navbar .menu{
-  display: none;}
+  display: none;
+  
+}
 
 
 
@@ -148,7 +152,7 @@ position:fixed;
   display:none;
   cursor:pointer;
   font-size: 5rem;
-  color:var(--white);
+  color:var(--black-body);
 }
 
 /*------------home page title css------*/
@@ -491,6 +495,8 @@ gap:2rem;
 .header .flex .navbar a{
   display:block;
   margin: 2rem;
+  margin-bottom: 3rem;
+  border-bottom: .1rem solid #aaa;
 }
 
 .header .flex .navbar.active{
@@ -507,7 +513,7 @@ gap:2rem;
 .navbar{
   width: 20rem;
   height: 100vh;
-  background:var(--light-bg);
+  background:var(--white);
   top:0;
   right: -30rem;
   position: fixed;
