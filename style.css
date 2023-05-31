@@ -29,9 +29,7 @@ selection{
 }
 html{
   font-size: 62.5%;
-  overflow-x: hidden;
   scroll-behavior: smooth;
-  scroll-padding-top:8rem;
 }
 
 
@@ -437,7 +435,7 @@ z-index: 1;
   margin-top: 5rem;
   
   grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fit,minmax(25rem, 3fr));
+  grid-template-columns: repeat(auto-fit,minmax(20rem, 3fr));
   
 }
 .service-list {
@@ -462,7 +460,7 @@ z-index: 1;
 .service-list  p{
   text-align: justify;
   color:#555;
-    font-size:1.5rem;
+    font-size:1.25rem;
 
   
 }
@@ -559,7 +557,7 @@ gap:2rem;
 @media only screen and (max-width:768px){
   
   html {
-    font-size: 42%;
+    font-size: 48%;
   }
   
     #menu-btu{
@@ -619,7 +617,7 @@ gap:2rem;
 }
 @media (max-width:540px) {
   html{
-    font-size: 40%;
+    font-size: 45%;
   }
   
   #menu-btu{
