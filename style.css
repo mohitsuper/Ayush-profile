@@ -153,6 +153,9 @@ position:fixed;
   color:var(--black-body);
 }
 
+
+
+
 /*------------home page title css------*/
 /*.home{
   width:100%;
@@ -613,6 +616,33 @@ gap:2rem;
   font-size: 1.2rem;  
 
 }*/
+
+/*----------footer css---------*/
+.footer .share{
+   margin-top:1rem;
+    background:#eee ;
+    padding-top: 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+     padding: 2rem;
+    
+}
+.footer .share a{
+  width: 4.5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  color:var(--black);
+  border-radius: 50%;
+  font-size: 4rem;
+
+
+}
+.footer .share h4{
+  color:var(--black);
+}
+
+.footer .share h4 span{
+color:var(--red);}
 
 /*--------media quarey ----------------*/
 @media (max-width:990px) {
